@@ -17,6 +17,8 @@ public class AmazonHomepage{
 	@FindBy(xpath="//a[text()='Echo Show 5']")
 	public WebElement echoshow;
 	
+	@FindBy(xpath="//a[text()='Fashion']")
+	public WebElement fashion;
 	
 	public AmazonHomepage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -44,6 +46,14 @@ public class AmazonHomepage{
 	public void ecoshow5() {
 		try {
 			echoshow.click();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void fashiontab() {
+		try {
+			fashion.click();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
