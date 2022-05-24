@@ -5,6 +5,7 @@ import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 
+import org.openqa.selenium.WindowType;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -80,7 +81,7 @@ public class TestClass extends TestBase{
 	}
 	
 
-	@Test(priority = 1,enabled = false, description="This a test related to adding a product to the wishlist from amazon" )
+	@Test(priority = 1,enabled = true, description="This a test related to adding a product to the wishlist from amazon" )
 	public void amazonwishlist() {
 		
 		AmazonHomepage ahome=new AmazonHomepage(driver);
@@ -121,11 +122,13 @@ public class TestClass extends TestBase{
 		  wait.until(ExpectedConditions.visibilityOf(fashion.sportswear));
 		  action.moveToElement(fashion.sportswear).perform();
 		  wait.until(ExpectedConditions.visibilityOf(fashion.nike));
-		  action.moveToElement(fashion.nike).click().perform();
+		  //action.moveToElement(fashion.nike).click().perform();
+		  action.click(fashion.nike).perform();
 		  Reporter.log("Nike page is opened and displayed");
+		  Assert.assertTrue(fashion.nikepage.isDisplayed());
 		  fashion.nikepage();
 		  
-		  String parent = driver.getWindowHandle();
+		  /*String parent = driver.getWindowHandle();
 		  Set<String> windows = driver.getWindowHandles();
 		  Iterator<String> iterator = windows.iterator();
 		  
@@ -133,7 +136,12 @@ public class TestClass extends TestBase{
 
 				String child_window = iterator.next();
 				if (!parent.equals(child_window)) {
-					driver.switchTo().window(child_window);
+					 driver.switchTo().window(child_window);
+		  			 */
+					 // driver.switchTo().newWindow(WindowType.TAB);
+		  driver.switchTo().newWindow(WindowType.TAB);
+		  driver.navigate().to("https://www.amazon.in/Chroma-Thong-Black-Slippers-833808-016/dp/B07B9ZD6QH/ref=sr_1_2?qid=1653032909&refinements=p_89%3Anike&s=apparel&sr=1-2");
+					//  Thread.sleep(5000);
 					  wait.until(ExpectedConditions.visibilityOf(nike.niketext));
 					  Assert.assertTrue(nike.niketext.isDisplayed());
 					  nike.nikegettext();
@@ -149,8 +157,8 @@ public class TestClass extends TestBase{
 		 
 					  driver.close();
 				}
-		  }
+		  
+	  
 	  
 	  }
-	 
-}
+

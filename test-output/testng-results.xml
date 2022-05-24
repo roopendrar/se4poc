@@ -8,16 +8,16 @@
       <![CDATA[nike chroma flipflop added to the cart successfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-05-19T18:02:14 IST" name="Default suite" finished-at="2022-05-19T18:03:39 IST" duration-ms="84219">
+  <suite started-at="2022-05-23T16:25:44 IST" name="Default suite" finished-at="2022-05-23T16:28:04 IST" duration-ms="139901">
     <groups>
     </groups>
-    <test started-at="2022-05-19T18:02:14 IST" name="Default test" finished-at="2022-05-19T18:03:39 IST" duration-ms="84219">
+    <test started-at="2022-05-23T16:25:44 IST" name="Default test" finished-at="2022-05-23T16:28:04 IST" duration-ms="139901">
       <class name="com.allegis.tests.TestClass">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.allegis.tests.TestClass@130161f7]" started-at="2022-05-19T18:02:14 IST" name="setup" finished-at="2022-05-19T18:02:27 IST" duration-ms="12549" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.allegis.tests.TestClass@291ae]" started-at="2022-05-23T16:25:44 IST" name="setup" finished-at="2022-05-23T16:26:24 IST" duration-ms="39743" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="amazonfashion()[pri:2, instance:com.allegis.tests.TestClass@130161f7]" started-at="2022-05-19T18:02:27 IST" name="amazonfashion" description="This test method is to add a Nike product to wish list" finished-at="2022-05-19T18:03:38 IST" duration-ms="71363" status="PASS">
+        <test-method signature="amazonfashion()[pri:2, instance:com.allegis.tests.TestClass@291ae]" started-at="2022-05-23T16:26:24 IST" name="amazonfashion" description="This test method is to add a Nike product to wish list" finished-at="2022-05-23T16:28:04 IST" duration-ms="99774" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Nike page is opened and displayed]]>
@@ -27,7 +27,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- amazonfashion -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.allegis.tests.TestClass@130161f7]" started-at="2022-05-19T18:03:38 IST" name="close" finished-at="2022-05-19T18:03:39 IST" duration-ms="256" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:com.allegis.tests.TestClass@291ae]" started-at="2022-05-23T16:28:04 IST" name="close" finished-at="2022-05-23T16:28:04 IST" duration-ms="306" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
